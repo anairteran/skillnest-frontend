@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* estilos generales */
+    --color-fondo: #3f4f64;
+    --color-barra: #2d3948;
+    --color-verde: #86b31e;
+    --color-blanco: #fff;
+    --color-negro: #000;
+
+    /* Border */
+    --border-imagenes: 15px;
+
+    /* Fuente */
+    --fuente-principal: verdana;
+
+    /* Pesos */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+    
+}
+
+/* barra headerbar1 (titulo y  buscador) */
+.header {
+    background-color: var(--color-barra);
+
+}
+
+.header-content {
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 70px;
+    /* margin-right: 5px; */
+}
+
+h1 {
+    color: var(--color-blanco);
+    margin-left: 10px;
+}
+
+h1 span {
+    color: var(--color-verde);
+}
+
+
+.btn-iniciar-sesion {
+    background-color: var(--color-verde);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    color: var(--color-blanco);
+}
+
+.barra-buscar {
+    padding: 8px 18px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+
+/* barra navbar de enlaces */
+nav {
+    width: 1000px;
+    margin: 0 auto;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+    border-bottom: 2px solid var(--color-verde);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-blanco)
+}
+
+/* titulo juegos */
+.titulo {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+/* foto principal */
+.pic-principal {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: var(--border-imagenes);
+}
+
+/* galeria de juegos */
+.galeria-content {
+    background-color: var(--color-barra);
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: var(--border-imagenes);
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic-game {
+    width: 125px;
+    border-radius: var(--border-imagenes);
+}
+
+.titulo-juegos{
+    text-align: center;
+    color: var(--color-blanco);
+    margin-top: 20px;
+}
+
+/* FIRMA */
+.firma{
+    text-align: center;
+    color: var(--color-blanco);
+    margin: 52px;
+}
