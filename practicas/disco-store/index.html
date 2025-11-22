@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nombre de Autor-->
+    <meta name="author" content="anair.teran@gmail.com" >
+    <!--Título Pestaña de la web-->
+    <title>DiscoStore-AT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="static/images/disco.png" alt="logo-disco" width="px">
+                <h1>Disco Store</h1>
+            </div>
+
+            <div class="enlaces">
+                <a href="../pages/tienda.html">Tiendas</a>
+                <a href="./pages/nosotros.html">Nosotros</a>
+                <a href="./pages/contacto.html">Contacto</a>
+                <button type="submit" class="btn-buy" value="Comprar">Comprar</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="div-principal">
+        <div class="tarjetas"> <!--tarjeta 1-->
+            <img src="./static/images/hablate-de-mi_jl.png" alt="foto-disco1">
+            <div class="detalle">
+                <h2>Hablate de mi</h2>
+                <p class="artista">Jósean Log</p>
+                <p>Háblate de mí es el primer extended play del cantautor mexicano Jósean Log.​ Se lanzó oficialmente el 14 de octubre de 2016 en formato físico y digital en México.​ Todas las canciones fueron escritas por Log. Fue producido por Mateo Lewis, y se distribuyo de forma independiente.​</p>
+            </div>
+            <div class="btn-like"><!--boton like-->
+                <button type="button">Me gusta</button>
+                <p>XX Me gusta(s)</p>
+            </div>
+    
+        </div>
+    
+        
+        <div class="tarjetas"> <!--tarjeta 2-->
+            <img src="./static/images/taylor-tortured.png" alt="foto-disco2">
+            <div class="detalle">
+                <h2>The Tortured Poets Department</h2>
+                <p class="artista">Taylor Swift</p>
+                <p>también abreviado como TTPD, es el undécimo álbum de estudio de la cantautora estadounidense Taylor Swift, lanzado el 19 de abril de 2024 a través de Republic Records</p>
+            </div>
+            <div class="btn-like"><!--boton like-->
+                <button type="button">Me gusta</button>
+                <p>XX Me gusta(s)</p>
+            </div>
+    
+        </div>
+    
+        
+        <div class="tarjetas"> <!--tarjeta 3-->
+            <img src="./static/images/imagine-dragons.png" alt="foto-disco3">
+            <div class="detalle">
+                <h2>Evolve</h2>
+                <p class="artista">Imagine Dragons</p>
+                <p>«Evolve» es el tercer álbum de estudio de la banda estadounidense de pop rock Imagine Dragons, lanzado el 23 de junio de 2017 por medio de KIDinaKORNER e Interscope Records. Fue producido por Alex Da Kid y precedido por tres sencillos: «Believer», «Whatever It Takes» y «Thunder».</p>
+            </div>
+            <div class="btn-like"><!--boton like-->
+                <button type="button">Me gusta</button>
+                <p>XX Me gusta(s)</p>
+            </div>
+    
+        </div>
+    </div>
+
+    <footer>
+        <form action="">
+            <div class="bloq1">
+                <label for="">Buscar por formato</label>
+                <i class="bi bi-volume-up-fill"></i>
+                <select name="" id="buscar-formato">
+                    <option value="todos">Todos</option>
+                    <option value="vinilos">Vinilos</option>
+                    <option value="cd">CD's</option>
+                </select>
+            </div>
+            <div class="bloq2">
+                <label for="">Buscar por genero música</label>
+                <i class="bi bi-music-note-beamed"></i>
+                <input type="text" name="buscar" id="buscar-genero">    
+            </div>
+
+
+            <button class="boton-buscar" type="button">Buscar</button>
+        </form>
+    </footer>
+    <p class="firma">
+        © 2025 skilnest - Desarrollado por: <a href="mailto:anair.teran@gmail.com">anair.teran@gmail.com</a>  
+    </p>
+
+    <!--Script JS-->
+    <script src="./static/js/script.js"></script>
+</body>
+</html>
