@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nombre de Autor-->
+    <meta name="author" content="anair.teran@gmail.com" >
+    <!--Título Pestaña de la web-->
+    <title>Formulario</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+    <body>
+        <div class="contenedor">
+            <h1>¡Regístrate y únete a la comunidad!</h1>
+            <form>
+        
+                <div class="fila">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text">
+                </div>
+        
+                <div class="fila">
+                    <label for="apellido">Apellido:</label>
+                    <input id="apellido" type="text">
+                </div>
+        
+                <div class="fila">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input id="correo" type="email">
+                </div>
+        
+                <div class="fila">
+                    <label for="password">Contraseña:</label>
+                    <input id="password" type="password">
+                </div>
+        
+                <div class="fila">
+                    <label for="password2">Confirmar Contraseña:</label>
+                    <input id="password2" type="password">
+                </div>
+        
+                <div class="fila">
+                    <label for="fnacimiento">Fecha de Nacimiento:</label>
+                    <input id="fnacimiento" type="date">
+                </div>
+        
+                <div class="fila">
+                    <label>Género:</label>
+        
+                    <input id="masculino" type="radio" name="genero">
+                    <label for="masculino">Masculino</label>
+        
+                    <input id="femenino" type="radio" name="genero">
+                    <label for="femenino">Femenino</label>
+        
+                    <input id="nodice" type="radio" name="genero">
+                    <label for="nodice">Prefiero no decir</label>
+                </div>
+        
+                <div class="fila">
+                    <input id="news" type="checkbox">
+                    <label for="news">Suscríbete a nuestro boletín de noticias</label>
+                </div>
+        
+                <div class="fila">
+                    <label for="descripcion">Una descripción de mí mismo:</label><br>
+                    <textarea id="descripcion"></textarea>
+                </div>
+        
+                <div class="fila">
+                    <label for="intereses">Selecciona tus intereses:</label><br>
+                    <select id="intereses" multiple size="4">
+                        <option>Música</option>
+                        <option>Deportes</option>
+                        <option>Viajes</option>
+                        <option>Tecnología</option>
+                    </select>
+                </div>
+        
+                <input type="submit" value="¡Registrarse!" />
+            </form>
+        </div>
+        <!--Script JS-->
+        <script src="./static/js/script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nombre de Autor-->
+    <meta name="author" content="anair.teran@gmail.com">
+    <!--Título Pestaña de la web-->
+    <title>Document</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="header-top">
+        <h1>El Tiempo</h1>
+    
+        <ul class="cities">
+            <li><a href="#">Arica</a></li>
+            <li><a href="#">Valparaíso</a></li>
+            <li><a href="#">Valdivia</a></li>
+        </ul>
+    </header>
+    
+    <nav class="sub-nav">
+        <h2 class="titulo-ciudad">Santiago</h2>
+    
+        <div class="temp-selector">
+            <label for="unit">ver temperatura en</label>
+            <select id="unit" name="unit">
+                <option value="c">°C</option>
+                <option value="f">°F</option>
+            </select>
+        </div>
+    </nav>
+    
+    </nav>
+    
+    <!-- Contenedor -->
+    <div class="contenedor">
+        <div class="tarjeta-tiempo">
+            <h2 class="tarjeta-titulo">Hoy</h2>
+            <img src="static/images/lluvia.png" alt="LLuvia">
+            <p>lluvia</p>
+            <div class="temperaturas">
+                <p>18°</p>
+                <p>24°</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-tiempo">
+            <h2 class="tarjeta-titulo">Mañana</h2>
+            <img src="static/images/soleado.png" alt="Soleado">
+            <p>lluvia</p>
+            <div class="temperaturas">
+                <p>18°</p>
+                <p>24°</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-tiempo">
+            <h2 class="tarjeta-titulo">Domingo</h2>
+            <img src="static/images/nublado.png" alt="Nublado">
+            <p>lluvia</p>
+            <div class="temperaturas">
+                <p>18°</p>
+                <p>24°</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-tiempo">
+            <h2 class="tarjeta-titulo">Lunes</h2>
+            <img src="static/images/nublado.png" alt="Nublado">
+            <p>lluvia</p>
+            <div class="temperaturas">
+                <p>18°</p>
+                <p>24°</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--Script JS-->
+    <script src="./static/js/script.js"></script>
+</body>
+
+</html>

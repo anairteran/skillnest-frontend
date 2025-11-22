@@ -1,0 +1,230 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 3px solid rgb(27, 37, 180); /*útil para depurar el layout 
+} */
+
+/* :root {
+    /* Colores 
+    --color-header: #03bcd4;
+    --color-text-main: #222;
+    --color-text-secondary: #555;
+    --color-text-light: #777;
+    --color-button-border: #ccc;
+    --color-bg: #fff;
+
+    /* Fuentes 
+    --font-main: "Arial", sans-serif;
+    --font-size-title: 26px;
+    --font-size-normal: 14px;
+    --font-size-small: 13px;
+
+    /* Espaciado 
+    --radius-tarjeta: 12px;
+    --radius-avatar: 50%;
+    --shadow-tarjeta: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body{
+    background-color: var(--color-bg);
+} */
+/* navegación */
+/* nav{
+    background-color: var(--color-text-main);
+    display: flex;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    margin: 0 auto;
+} */
+
+/* .navbar{
+    max-width: 1000px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+/* 
+nav h2{
+    color: var(--color-bg);
+    justify-content: space-around;
+
+} */
+/* fin de navegación */
+
+/* .principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;   /* ancho máximo 
+    margin: 0 auto;
+}
+
+.tarjeta {
+    width: 400px;
+    margin: 30px auto;
+    border-radius: var(--radius-tarjeta);
+    overflow: hidden;
+    box-shadow: var(--shadow-tarjeta);
+    background: var(--color-bg);
+    font-family: var(--font-main);
+}
+
+.solicitudes {
+    display: flex;
+} */
+
+/* Franja superior */
+/* .encabezado {
+    height: 120px;
+    background: var(--color-header);
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: var(--radius-avatar);
+    margin-top: -70px;
+    border: 5px solid white;
+    display: block;
+    margin-left: 25px;
+    margin-right: auto;
+}
+
+.info {
+    font-size: var(--font-size-small);
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colores */
+    --color-header: #03bcd4;
+    --color-text-main: #222;
+    --color-text-secondary: #555;
+    --color-text-light: #777;
+    --color-button-border: #ccc;
+    --color-bg: #fff;
+
+    /* Fuentes */
+    --font-main: "Arial", sans-serif;
+    --font-size-title: 26px;
+    --font-size-normal: 14px;
+    --font-size-small: 13px;
+
+    /* Espaciado */
+    --radius-tarjeta: 12px;
+    --radius-avatar: 50%;
+    --shadow-tarjeta: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-main);
+}
+
+/* NAV: barra a lo ancho */
+.navbar {
+    background-color: var(--color-text-main);
+    width: 100%;
+}
+
+/* Contenido del nav alineado con .principal */
+.navbar-content {
+    max-width: 1200px;       /* MISMO ancho que .principal */
+    margin: 0 auto;          /* centrado */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-bg);
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a,
+.nav-links button {
+    color: var(--color-bg);
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+/* CONTENIDO PRINCIPAL */
+.principal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 30px auto;   /* mismo centro que nav-content */
+    outline: 3px solid rgb(27, 37, 180);
+}
+
+.tarjeta {
+    width: 400px;
+    margin-bottom: 30px;
+    border-radius: var(--radius-tarjeta);
+    overflow: hidden;
+    box-shadow: var(--shadow-tarjeta);
+    background: var(--color-bg);
+}
+
+/* resto igual */
+.solicitudes {
+    display: flex;
+}
+
+.encabezado {
+    height: 120px;
+    background: var(--color-header);
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: var(--radius-avatar);
+    margin-top: -70px;
+    border: 5px solid white;
+    display: block;
+    margin-left: 25px;
+}
+
+.info {
+    font-size: var(--font-size-small);
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+}
+
+.solicitudes {
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+/* 
+.solicitudes i{
+    color: #03bcd4; 
+} */
+.avatares  {
+    max-width: 50px;
+    max-height: 50px;
+}

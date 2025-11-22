@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 3px solid rgb(27, 37, 180);*/  /* útil para depurar el layout */
+}
+
+:root {
+    /* Colores */
+    --color-header: #03bcd4;
+    --color-text-main: #222;
+    --color-text-secondary: #555;
+    --color-text-light: #777;
+    --color-button-border: #ccc;
+    --color-bg: #fff;
+
+    /* Fuentes */
+    --font-main: "Arial", sans-serif;
+    --font-size-title: 26px;
+    --font-size-normal: 14px;
+    --font-size-small: 13px;
+
+    /* Espaciado */
+    --radius-tarjeta: 12px;
+    --radius-avatar: 50%;
+    --shadow-tarjeta: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta completa */
+.tarjeta {
+    width: 400px;
+    margin: 30px auto;
+    border-radius: var(--radius-tarjeta);
+    overflow: hidden;
+    box-shadow: var(--shadow-tarjeta);
+    background: var(--color-bg);
+    font-family: var(--font-main);
+    min-height: 470px;
+}
+
+/* Franja superior */
+.encabezado {
+    height: 120px;
+    background: var(--color-header);
+}
+
+/* Imagen de perfil */
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: var(--radius-avatar);
+    margin-top: -70px;
+    border: 5px solid white;
+    display: block;
+    margin-left: 25px;
+    margin-right: auto;
+}
+
+/* Contenido */
+.tarjeta-body {
+    padding: 20px 30px;
+    text-align: left;
+}
+
+.tarjeta-body h2 {
+    margin-bottom: 10px;
+    font-size: var(--font-size-title);
+    color: var(--color-text-main);
+}
+
+.origen {
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    font-size: var(--font-size-normal);
+}
+
+.tags {
+    font-size: var(--font-size-small);
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: var(--font-size-small);
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+}
+
+/* Botón */
+.edit-btn {
+    padding: 8px 18px;
+    background: white;
+    border: 1px solid var(--color-button-border);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+}
+
+.edit-btn:hover {
+    background: #f0f0f0;
+}
+

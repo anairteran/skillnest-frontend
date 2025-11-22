@@ -1,0 +1,202 @@
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 3px solid rgb(27, 37, 180); útil para depurar el layout */
+}
+
+:root {
+    /*Colores */
+    --color-morado: #613B6F;
+    --color-verde: #8DAC50;
+    --color-text-secondary: #555;
+    --color-text-light: #777;
+    --color-button-border: #ccc;
+    --color-blanco: #fff;
+
+    /* Fuentes */
+    --font-main: "Arial", sans-serif;
+    --font-size-title: 26px;
+    --font-size-normal: 14px;
+    --font-size-small: 13px;
+
+    /* Espaciado */
+    --width-page: 1000px;
+    --radius-tarjeta: 12px;
+    --radius-avatar: 50%;
+    --shadow-tarjeta: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-button-border); /*color fondo page*/
+}
+
+/*------------------------------ barra de navegación ------------------------ */
+.header {
+    background-color: var(--color-verde);
+    width: 100%;
+    padding: 8px;
+    /* display: flex;
+    align-items: center; */
+}
+
+.navbar-content{
+    max-width: var(--width-page); /*tamaño maximo del navbar-content (a lo ancho)*/
+    margin: 0 auto; /*centra el contenido en apoyo al max-width*/
+    /* padding-: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-blanco);
+}
+
+.titulo-pag {
+    /* background-color: morado; */
+    margin: 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+a{
+    padding: 16px; /*separar links entre si*/
+}
+
+.btn-cerrarSesion{
+    color: var(--color-blanco);
+    background-color: var(--color-morado);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* TARJETAS - ESTILOS GENERALES */
+.principal{
+    max-width: var(--width-page);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor1 {
+    flex: 2;
+    margin-right: 18px;
+}
+
+.contenedor2 {
+    flex: 1;
+    align-items: self-end;
+}
+/* DISEÑO GENREAL DE TARJETAS */
+.tarjeta{
+    /* outline: 1px solid; */
+    max-width: 100%; /*abarca el 100% del flex*/
+    margin-top: 14px; /* margen superior de las tarjetas*/
+    padding: 0px 0px 10px 0px; /*espacio al borde inferior de los contenedores*/
+    border-radius: var(--radius-tarjeta);
+    box-shadow: var(--shadow-tarjeta);
+    background: var(--color-blanco);
+}   
+
+.friend {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+
+}
+
+.avatares  {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: var(--radius-avatar);
+    border: 3px solid var(--color-verde);
+}  
+
+.user-name{
+    padding-left: 12px;
+}
+
+h3{
+    text-align: center;
+}
+
+/* TARJETA PERFIL */
+.avatar{
+    width: 140px;
+    height: 140px;
+    border-radius: var(--radius-avatar);
+    margin-top: -70px;
+    border: 5px solid white;
+    display: block;
+    margin-left: 25px;
+}
+
+.encabezado {
+    height: 90px;
+    background-color: var(--color-morado);
+    border-radius: var(--radius-tarjeta) var(--radius-tarjeta) 0px 0px;
+}
+
+.tarjeta-body, .educacion { /*texto de tarjeta educacion y */
+    padding: 30px;
+}
+
+.titulo-tarjetas{
+    padding-bottom: 20px;
+}
+
+.edit-btn {
+    margin-top: 20px;
+    padding: 8px 18px;
+    background: white;
+    border: 1px solid var(--color-button-border);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+}
+
+.origen {
+    color: #555;
+}
+
+/* TARJETAS SOLICITUDES */
+h3{
+    padding: 13PX;
+}
+
+    /* SOLICITUDES */
+.solicitudes{
+    padding-left: 10px;
+}
+
+.solicitud.friend{
+    justify-content: space-between;
+}
+
+.solicitud-user {
+    display: flex;
+    align-items: center;
+}
+
+.botones-solicitudes {
+    display: flex;
+    align-content: right;
+}
+
+i{
+    font-size: 30px;
+    color: var(--color-verde);
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+/* TARJETA CONEXIONES */
+    /* CONEXIONES */
+.conexiones{
+    padding-left: 10px;
+}

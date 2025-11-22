@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nombre de Autor-->
+    <meta name="author" content="anair.teran@gmail.com">
+    <!--Título Pestaña de la web-->
+    <title>Página de Perfil</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar-content">
+            <h2 class="titulo-pag">Perfil</h2>
+            <div class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#">Mi Perfil</a>
+                <a href="#">Encontrar Conexiones</a>
+                <button type="button" class="btn-cerrarSesion">Cerrar Sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal">
+        <section class="contenedor1">
+            <div class="tarjeta perfil">
+                <div class="encabezado"></div>
+                <img class="avatar" src="./static/images/buzz.png" alt="foto de perfil">
+
+                <div class="tarjeta-body">
+                    <h2 class="titulo-tarjetas">Buzz Lightyear</h2>
+
+                    <p class="origen">El infinito, y cuarto de Andy.</p>
+
+                    <p class="tags">
+                        Guardían espacial | Compañero de Woody | Héroe intergálactico accidental.
+                    </p>
+
+                    <p class="bio">
+                        Héroe espacial, el que vuela al infino y mas allá si su mejor amigo Woody(aunque el no lo
+                        acepta) lo necesita, el jueguete que nos enseñó que para ser solo hay que creer que somos.
+                    </p>
+
+                    <button class="edit-btn">edit profile</button>
+                </div>
+            </div>
+
+            <div class="tarjeta educacion">
+                <h2>Educación</h2>
+                <p class="info">Guardían espacial, especialista en cuidado del cuarto de andy y juguete estrella de Pixar y Disney</p>
+                <p class="info">1995 - 2019</p>
+                <p class="info">2026 (Proximamente)</p>
+                <p class="info">Guardabosques espacial, viajero hasta el infinito y más allá con el fin de proteger el universo.</p>
+            </div>
+        </section>
+
+        <section class="contenedor2">
+            <div class="tarjeta solicitud">
+                <h3>Solicitudes de conexión <span class="contador">(2)</span></h3>
+                <div class="solicitudes">
+                    <div class="solicitud friend">
+                        <div class="solicitud-user">
+                            <img class="avatares" src="./static/images/1.png" alt="">
+                            <h5 class="user-name">Sheriff Woody</h5>
+                        </div>
+                        <div class="botones-solicitudes">
+                            <i class="bi bi-check-circle"></i>
+                            <i class="bi bi-x-circle"></i>
+                        </div>
+                    </div>
+                    <div class="solicitud friend">
+                        <div class="solicitud-user">
+                            <img class="avatares" src="./static/images/2.png" alt="">
+                            <h5 class="user-name">Jessie Vaquera</h5>
+                        </div>
+                        <div class="botones-solicitudes">
+                            <i class="bi bi-check-circle"></i>
+                            <i class="bi bi-x-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta friends">
+                <h3>Tus conexiones <span class="contador">(500+)</span></h3>
+                <div class="conexiones">
+                    <div class="user friend">
+                        <img class="avatares" src="./static/images/3.png" alt="">
+                        <h5 class="user-name">Sr. Cara de papa</h5>
+                    </div>
+                    <div class="user friend">
+                        <img class="avatares" src="./static/images/4.png" alt="">
+                        <h5 class="user-name">Terrible Rex</h5>
+                    </div>
+                    <div class="user friend">
+                        <img class="avatares" src="./static/images/5.png" alt="">
+                        <h5 class="user-name">Marcianito 1/3</h5>
+                    </div>
+                    <div class="user friend">
+                        <img class="avatares" src="./static/images/6.png" alt="">
+                        <h5 class="user-name">Sra. Cara de papa</h5>
+                    </div>
+                    <div class="user friend">
+                        <img class="avatares" src="./static/images/7.png" alt="">
+                        <h5 class="user-name">Hamm ¡oinc, oinc!</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Script JS-->
+    <script src="./static/js/script.js"></script>
+</body>
+
+</html>
