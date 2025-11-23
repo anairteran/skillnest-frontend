@@ -173,7 +173,7 @@ git merge main
 7. Merge
 8. `git checkout main`
 9. `git pull`
-10. (Opcional) borrar rama 
+10. (Opcional) borrar rama
     `git checkout main` ->
     `git branch -d nombre-de-la-rama` ->
     `git push origin --delete nombre-de-la-rama`
