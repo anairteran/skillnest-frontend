@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }  
+
+html, body {
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    /* background-image: url("../images/fondo.png"); */
+    background-image:
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.3)),
+    url("../images/fondo.png");
+
+}
+
+nav, footer, .firma {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: aqua;
+    padding: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1{
+    color: aqua;
+    align-content: center;
+    padding-left: 5px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.enlaces {
+    color: pink;
+}
+
+.div-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    flex: 1;
+    align-content: center;
+}
+
+.tarjetas {
+    background-color: rgb(219, 206, 219,0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.tarjetas h2, p {
+    padding: 10px;
+}
+
+.tarjetas img {
+    width: 200PX;
+    border-radius: 15px;
+}
+
+.btn-like {
+    width: auto;
+}
+
+button {
+    background-color: rgb(243, 85, 222);
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease. color 0.3s ease; */
+}
+
+button:hover {
+    background-color: rgb(120, 38, 148);
+    color: beige;
+}
+
+.boton-buscar, .btn-buy {
+    background-color: rgb(8, 102, 102);
+    color: white;
+}
+
+
+
+footer{
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+
+a,
+a:visited,
+a:active {
+    color: aqua;   /* o el color que prefieras */
+}
+
+
+/*
+.bloq1{
+    display: flex;
+}
+
+.bloq2{
+    display: flex;
+}
+
+
+.bi-volume-up-fill{
+    color: white;
+}
+
+.bi-music-note-beamed{
+    color: white;
+}*/
+
+.firma{
+    text-align: center;
+}
